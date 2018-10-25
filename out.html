@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>i3 Reference Card (i3refgen)</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+			h2 {
+				margin: 7px 0 2px;
+				padding: 2px 4px;
+				font-size: 1.1em;
+				font-family: sans;
+				background-color: #b3b3b3;
+			}
+			kbd {
+				/* border-spacing: 2px; */
+				background: rgba(128, 128, 128, 0.596);
+				padding: 5px;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1>i3 Reference Card (i3refgen)</h1>
+			<p>You can print this file and put it on your desk.</p>
+		</header>
+		<section>
+			<h2>Keybindings</h2>
+			<br>
+			<table>
+				<tbody>
+					<tr><td><kbd>$mod+Return</kbd></td><td><b>Execute command</b> termite</td></tr><tr><td><kbd>$mod+Shift+q</kbd></td><td><b>Close current window</b></td></tr><tr><td><kbd>$mod+Shift+d</kbd></td><td><b>Execute command</b> --no-startup-id i3-dmenu-desktop</td></tr><tr><td><kbd>$mod+d</kbd></td><td><b>Execute command</b> --no-startup-id rofi -show drun</td></tr><tr><td><kbd>$mod+Left</kbd></td><td><b>Focus a container</b> left</td></tr><tr><td><kbd>$mod+Down</kbd></td><td><b>Focus a container</b> down</td></tr><tr><td><kbd>$mod+Up</kbd></td><td><b>Focus a container</b> up</td></tr><tr><td><kbd>$mod+Right</kbd></td><td><b>Focus a container</b> right</td></tr><tr><td><kbd>$mod+Shift+j</kbd></td><td><b>Move container</b> left</td></tr><tr><td><kbd>$mod+Shift+k</kbd></td><td><b>Move container</b> down</td></tr><tr><td><kbd>$mod+Shift+l</kbd></td><td><b>Move container</b> up</td></tr><tr><td><kbd>$mod+Shift+semicolon</kbd></td><td><b>Move container</b> right</td></tr><tr><td><kbd>$mod+Shift+Left</kbd></td><td><b>Move container</b> left</td></tr><tr><td><kbd>$mod+Shift+Down</kbd></td><td><b>Move container</b> down</td></tr><tr><td><kbd>$mod+Shift+Up</kbd></td><td><b>Move container</b> up</td></tr><tr><td><kbd>$mod+Shift+Right</kbd></td><td><b>Move container</b> right</td></tr><tr><td><kbd>$mod+h</kbd></td><td><b>Split containers</b> h</td></tr><tr><td><kbd>$mod+v</kbd></td><td><b>Split containers</b> v</td></tr><tr><td><kbd>$mod+f</kbd></td><td><b>Fullscreen window</b> toggle</td></tr><tr><td><kbd>$mod+s</kbd></td><td><b>Change container layout</b> stacking</td></tr><tr><td><kbd>$mod+w</kbd></td><td><b>Change container layout</b> tabbed</td></tr><tr><td><kbd>$mod+e</kbd></td><td><b>Change container layout</b> toggle split</td></tr><tr><td><kbd>$mod+Shift+f</kbd></td><td><b>Floating window mode</b> toggle</td></tr><tr><td><kbd>$mod+space</kbd></td><td><b>Focus a container</b> mode_toggle</td></tr><tr><td><kbd>$mod+a</kbd></td><td><b>Focus a container</b> parent</td></tr><tr><td><kbd>$mod+1</kbd></td><td><b>Switch to workspace</b> $ws1</td></tr><tr><td><kbd>$mod+2</kbd></td><td><b>Switch to workspace</b> $ws2</td></tr><tr><td><kbd>$mod+3</kbd></td><td><b>Switch to workspace</b> $ws3</td></tr><tr><td><kbd>$mod+4</kbd></td><td><b>Switch to workspace</b> $ws4</td></tr><tr><td><kbd>$mod+5</kbd></td><td><b>Switch to workspace</b> $ws5</td></tr><tr><td><kbd>$mod+6</kbd></td><td><b>Switch to workspace</b> $ws6</td></tr><tr><td><kbd>$mod+7</kbd></td><td><b>Switch to workspace</b> $ws7</td></tr><tr><td><kbd>$mod+8</kbd></td><td><b>Switch to workspace</b> $ws8</td></tr><tr><td><kbd>$mod+9</kbd></td><td><b>Switch to workspace</b> $ws9</td></tr><tr><td><kbd>$mod+0</kbd></td><td><b>Switch to workspace</b> $ws10</td></tr><tr><td><kbd>$mod+Shift+1</kbd></td><td><b>Move container</b> container to workspace $ws1</td></tr><tr><td><kbd>$mod+Shift+2</kbd></td><td><b>Move container</b> container to workspace $ws2</td></tr><tr><td><kbd>$mod+Shift+3</kbd></td><td><b>Move container</b> container to workspace $ws3</td></tr><tr><td><kbd>$mod+Shift+4</kbd></td><td><b>Move container</b> container to workspace $ws4</td></tr><tr><td><kbd>$mod+Shift+5</kbd></td><td><b>Move container</b> container to workspace $ws5</td></tr><tr><td><kbd>$mod+Shift+6</kbd></td><td><b>Move container</b> container to workspace $ws6</td></tr><tr><td><kbd>$mod+Shift+7</kbd></td><td><b>Move container</b> container to workspace $ws7</td></tr><tr><td><kbd>$mod+Shift+8</kbd></td><td><b>Move container</b> container to workspace $ws8</td></tr><tr><td><kbd>$mod+Shift+9</kbd></td><td><b>Move container</b> container to workspace $ws9</td></tr><tr><td><kbd>$mod+Shift+0</kbd></td><td><b>Move container</b> container to workspace $ws10</td></tr><tr><td><kbd>$mod+Shift+c</kbd></td><td><b>Reload i3wm</b></td></tr><tr><td><kbd>$mod+Shift+r</kbd></td><td><b>Restart i3wm in place</b></td></tr><tr><td><kbd>$mod+Shift+e</kbd></td><td><b>Execute command</b> "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"</td></tr><tr><td><kbd>$mod+r</kbd></td><td><b>Window mode</b> "resize"</td></tr><tr><td><kbd>XF86MonBrightnessUp</kbd></td><td><b>Execute command</b> "xbacklight -inc 5 && pkill -RTMIN+12 i3blocks"</td></tr><tr><td><kbd>XF86MonBrightnessDown</kbd></td><td><b>Execute command</b> "xbacklight -dec 5 && pkill -RTMIN+12 i3blocks"</td></tr><tr><td><kbd>XF86AudioRaiseVolume</kbd></td><td><b>Execute command</b> "amixer -D pulse sset Master 5%+ && pkill -RTMIN+2 i3blocks"</td></tr><tr><td><kbd>XF86AudioLowerVolume</kbd></td><td><b>Execute command</b> "amixer -D pulse sset Master 5%- && pkill -RTMIN+2 i3blocks"</td></tr><tr><td><kbd>$mod+Shift+z</kbd></td><td><b>Switch to workspace</b> prev </td></tr><tr><td><kbd>$mod+Shift+x</kbd></td><td><b>Switch to workspace</b> next</td></tr><tr><td><kbd>$mod+x</kbd></td><td><b></b> focus</td></tr><tr><td><kbd>$mod+l</kbd></td><td><b>Execute command</b> "slock"</td></tr><tr><td><kbd>$mod+Pause</kbd></td><td><b>Execute command</b> /home/ron/sharenix/sharenix-section</td></tr><tr><td><kbd>$mod+Shift+s</kbd></td><td><b>Execute command</b> "slock systemctl suspend"</td></tr><tr><td><kbd>$mod+Shift+n</kbd></td><td><b>Execute command</b> networkmanager_dmenu</td></tr>
+				</tbody>
+			</table>
+		</section>
+	</body>
+	</html>
