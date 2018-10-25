@@ -6,6 +6,7 @@ import (
 	"log"
 	"strings"
 )
+
 func readParse() []keybinding {
 	xdg, err := xdgbasedir.GetConfigFileLocation("i3")
 	cfg := xdg + "/config"

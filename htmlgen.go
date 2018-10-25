@@ -1,41 +1,41 @@
 package main
 
 import (
-	"strings"
 	"fmt"
 	"io/ioutil"
+	"strings"
 	// "log"
 	"os"
 )
 
 var cmdHuman = map[string]string{
-	"workspace": "Switch to workspace",
-	"exec": "Execute command",
-	"split": "Split containers",
-	"layout": "Change container layout",
-	"focus": "Focus a container",
-	"move": "Move container",
-	"swap": "Swap",
-	"sticky": "Sticky floating windows",
-	"nop": "Do nothing",
-	"restart": "Restart i3wm in place",
-	"reload": "Reload i3wm",
-	"exit": "Exit your X session",
-	"kill": "Close current window",
+	"workspace":  "Switch to workspace",
+	"exec":       "Execute command",
+	"split":      "Split containers",
+	"layout":     "Change container layout",
+	"focus":      "Focus a container",
+	"move":       "Move container",
+	"swap":       "Swap",
+	"sticky":     "Sticky floating windows",
+	"nop":        "Do nothing",
+	"restart":    "Restart i3wm in place",
+	"reload":     "Reload i3wm",
+	"exit":       "Exit your X session",
+	"kill":       "Close current window",
 	"fullscreen": "Fullscreen window",
-	"floating": "Floating window mode",
-	"mode": "Window mode",
+	"floating":   "Floating window mode",
+	"mode":       "Window mode",
 }
 
 func generate(kbs []keybinding) {
 	str := ""
 	for _, kb := range kbs {
 		rcmds := strings.Split(kb.cmd, string(0x20))
-		rcmd := rcmds[1];
-		cmd := "<b>"+cmdHuman[rcmd] + "</b>" + strings.TrimPrefix(kb.cmd, rcmds[0]+" "+rcmd)
+		rcmd := rcmds[1]
+		cmd := "<b>" + cmdHuman[rcmd] + "</b>" + strings.TrimPrefix(kb.cmd, rcmds[0]+" "+rcmd)
 		str += fmt.Sprintf("<tr><td><kbd>%s</kbd></td><td>%s</td></tr>", kb.key, cmd)
 	}
-	ioutil.WriteFile("out.html", []byte(template(str)), os.FileMode(int(0777)));
+	ioutil.WriteFile("out.html", []byte(template(str)), os.FileMode(int(0777)))
 	// log.Println(template(str));
 }
 

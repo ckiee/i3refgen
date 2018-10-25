@@ -1,9 +1,8 @@
 package main
 
-
 func main() {
-	kbs := readParse();
-	generate(kbs);
+	kbs := readParse()
+	generate(kbs)
 }
 
 type keybinding struct {
