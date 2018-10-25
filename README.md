@@ -3,6 +3,8 @@ Reads your i3 configuration file and generates a HTML file with the keybindings 
 
 # Build
 ```
-    go get https://github.com/ronthecookie/i3refgen
-    go build # Or `go install`
+    go get github.com/ronthecookie/i3refgen
+    go get github.com/cep21/xdgbasedir
+    go build
+    go install # Like `make install` (no root required)
 ```
